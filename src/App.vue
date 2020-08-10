@@ -1,7 +1,15 @@
 <template>
   <div id="app">
+	<div>
+		<router-link to="/">首页</router-link>
+		<router-link to="/about">关于我们</router-link>
+	</div>
+	<div>
+		<router-view></router-view>
+	</div>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+	
 	<!-- 打印信息 -->
 	<div>{{ message1 }}</div>
 	<!-- v-bind 动态绑定 -->
